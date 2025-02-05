@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SU QTE Training</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Sonic Unleashed QTE Training</h1>
+    <p>(The script of this page is made with ChatGPT as a proof of concept)</p>
+    <label for="timeLimit">Select Time Limit:</label>
+    <select id="timeLimit">
+        <option value="1000">1 Second</option>
+        <option value="2000">2 Seconds</option>
+        <option value="3000">3 Seconds</option>
+        <option value="5000">5 Seconds</option>
+        <option value="10000">10 Seconds</option>
+    </select>
+    <br><br>
+    <label for="keyCount">Select Key Count:</label>
+    <select id="keyCount">
+        <option value="3">3 Keys</option>
+        <option value="5">5 Keys</option>
+        <option value="random">Random</option>
+    </select>
+    <br><br>
+    <label for="inputMode">Input Mode:</label>
+    <select id="inputMode">
+        <option value="keyboard">Keyboard</option>
+        <option value="ps3">Controller</option>
+    </select>
+    <br><br>
+    <button id="startButton">Start</button>
+    <button id="stopButton" disabled>Stop</button>
+    <div class="key-display" id="keyDisplay"></div>
+    <div class="time-bar-container">
+        <div class="time-bar" id="timeBar"></div>
+    </div>
+    <div class="message" id="message"></div>
+    <audio id="failSound" src="fail.mp3"></audio>
+    <audio id="successSound" src="ding.mp3"></audio>
+    <audio id="successCompleteSound" src="yahoo.mp3"></audio>
+    <audio id="success" src="success.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>

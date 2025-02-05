@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    background-color: rgb(48, 48, 48);
+    color: #e0e0e0;
+}
+
+.key-display {
+    margin: 20px;
+}
+
+.key-img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+
+.message {
+    font-size: 24px;
+    color: rgb(111, 228, 111);
+}
+
+.time-bar-container {
+    width: 10%;
+    background-color: #e0e0e0;
+    margin: 20px auto;
+    height: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.time-bar {
+    height: 100%;
+    width: 0%;
+    background-color: #76c7c0;
+    transition: width linear;
+}
